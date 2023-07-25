@@ -26,6 +26,11 @@ const navLinks: NavLinks[] = [
     },
 ];
 
+function scrollToSection(event:any, sectionRef:any) {
+    event.preventDefault();
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+}
+
 const Header = () => {
     return (
         <header className="h-20 bg-white shadow-md w-full px-3 flex items-center justify-center fixed top-0 z-50">

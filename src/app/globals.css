@@ -3,16 +3,86 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
+.btn-rounded {
+    @apply bg-primary hover:bg-violet-500 p-6 rounded-xl text-white font-bold;
+}
+
+.type-write-effect {
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 7s steps(16) infinite,
+        blinking 0.3s infinite step-end alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 15ch;
+    }
+    75% {
+        width: 15ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid #ebefff;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.arrow {
+    animation: arrowIndicate 2s infinite ease-in-out;
+}
+
+@keyframes arrowIndicate {
+    0% {
+      
+        transform: translateY(-10px);
+        
+    }
+    50% {
+        
+        transform: translateY(20px);
+        
+    }
+  
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
