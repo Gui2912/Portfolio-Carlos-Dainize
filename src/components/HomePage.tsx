@@ -1,7 +1,13 @@
 import React from "react";
 import { Section } from "@/components";
 import Link from "next/link";
-import { BsLinkedin, BsGithub, BsWhatsapp, BsArrowDown,BsArrowDownCircleFill } from "react-icons/bs";
+import {
+    BsLinkedin,
+    BsGithub,
+    BsWhatsapp,
+    BsArrowDown,
+    BsArrowDownCircleFill,
+} from "react-icons/bs";
 
 const HomePage = () => {
     return (
@@ -18,7 +24,7 @@ const HomePage = () => {
                         </h1>
                         <div className="items-center w-full flex flex-col justify-center">
                             <div className="w-full text-center flex justify-center">
-                                <h2 className="text-primary font-bold underline text-3xl type-write-effect border-gray-400 border-r-4 mb-8">
+                                <h2 className="text-primary font-bold underline text-3xl type-write-effect border-gray-400 border-r-4 mb-8 font-mono">
                                     Front end developer.
                                 </h2>
                             </div>
@@ -43,11 +49,11 @@ const HomePage = () => {
                                 </Link>
                             </div>
                             <div className="flex mt-12 relative">
-                                <BsArrowDownCircleFill className="text-2xl absolute left-[40%] top-[25%] arrow text-primary" />
+                                <BsArrowDownCircleFill className="text-2xl absolute left-[40%] top-[30%] arrow text-primary" />
 
-                                <div className="triangle-left"></div>
+                                <div className="triangle-left" />
 
-                                <div className="triangle-right"></div>
+                                <div className="triangle-right" />
                             </div>
                         </div>
                     </div>
