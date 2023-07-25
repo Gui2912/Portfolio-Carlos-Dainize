@@ -1,4 +1,5 @@
 import { Button, Section } from "@/components";
+import { Technologies } from "@/utils";
 import React from "react";
 
 interface AboutInfos {
@@ -40,7 +41,7 @@ const aboutInformations: AboutInfos[] = [
 
 const AboutPage = () => {
     return (
-        <Section className="" id='about'>
+        <Section className="">
             <h2 className="text-start w-full font-bold text-5xl">About-me</h2>
             <p className="text-xl text-gray-400 my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -65,10 +66,26 @@ const AboutPage = () => {
                     <span className="text-primary font-bold text-xl">120</span>{" "}
                     Projects completed
                 </p>
-                <Button className='btn-rounded'>Dowload Resume</Button>
+                <Button className="btn-rounded">Dowload Resume</Button>
             </article>
-            <ul>
-                
+            <h2 className="w-full text-start text-3xl font-bold my-6">
+                Technologies
+            </h2>
+            <ul
+                className="flex gap-4 flex-nowrap mb-20 w-full overflow-x-scroll relative h-44 scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#EBEFFF]"
+                id="about"
+            >
+                {Technologies.map((elt, index) => (
+                    <li
+                        key={index}
+                        className="rounded-md cursor-pointer min-w-[6rem] w-24 h-24 shadow-xl flex justify-center items-center relative tech-card bg-[#ebefff]"
+                    >
+                        <elt.icon className="text-5xl text-gray-800  hover:text-primary" />
+                        <p className="text-xl font-mono absolute hidden shadow-xl bg-[#fff] p-2 rounded-md text-center bottom-[-50px]">
+                            {elt.techName}
+                        </p>
+                    </li>
+                ))}
             </ul>
         </Section>
     );
