@@ -72,12 +72,11 @@ const AboutPage = () => {
                 Technologies
             </h2>
             <ul
-                className="flex gap-4 flex-nowrap mb-20 w-full overflow-x-scroll relative h-44 "
+                className="flex gap-4 flex-nowrap mb-20 w-full overflow-x-scroll relative h-44 scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#EBEFFF]"
                 id="about"
             >
                 {Technologies.map((elt, index) => (
                     <li
-                       
                         key={index}
                         className="rounded-md cursor-pointer min-w-[6rem] w-24 h-24 shadow-xl flex justify-center items-center relative tech-card bg-[#ebefff]"
                     >
