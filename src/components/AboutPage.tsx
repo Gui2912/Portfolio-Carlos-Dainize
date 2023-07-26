@@ -78,9 +78,11 @@ const AboutPage = () => {
                 {Technologies.map((elt, index) => (
                     <li
                         key={index}
-                        className="rounded-md cursor-pointer min-w-[6rem] w-24 h-24 shadow-xl flex justify-center items-center relative tech-card bg-[#ebefff]"
+                        className="rounded-md cursor-pointer min-w-[6rem] w-24 h-24 shadow-xl flex justify-center items-center relative tech-card bg-[#ebefff] hover:first-line:text-primary"
                     >
-                        <elt.icon className="text-5xl text-gray-800  hover:text-primary" />
+                        <i className="h-full w-full flex items-center text-gray-800 justify-center hover:text-primary">
+                            <elt.icon className="text-5xl" />
+                        </i>
                         <p className="text-xl font-mono absolute hidden shadow-xl bg-[#fff] p-2 rounded-md text-center bottom-[-50px]">
                             {elt.techName}
                         </p>

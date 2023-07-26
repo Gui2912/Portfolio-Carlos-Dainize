@@ -24,11 +24,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.tech-container::-webkit-scrollbar {
-    width: 10px;
-    height: 2px;
-}
-
 .tech-card:hover > p {
     animation: scaleUp 0.2s ease-in-out;
     display: flex;
