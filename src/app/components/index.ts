@@ -1,8 +1,8 @@
-import AboutPage from './AboutPage';
+import AboutPage from './pages/AboutPage';
 import Button from "./Button";
 import Card from "./Card";
 import Header from "./Header";
-import HomePage from './HomePage';
+import HomePage from './pages/HomePage';
 import Section from "./Section";
 
 

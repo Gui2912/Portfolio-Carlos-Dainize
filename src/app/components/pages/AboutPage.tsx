@@ -1,47 +1,10 @@
-import { Button, Section } from "@/components";
-import { Technologies } from "@/utils";
+import { Button, Section } from "../../components";
+import { Technologies, aboutInformations } from "../../utils";
 import React from "react";
-
-interface AboutInfos {
-    label: string;
-    information: string;
-}
-
-const aboutInformations: AboutInfos[] = [
-    {
-        label: "Name",
-        information: "Carlos Guilherme de Souza Dainize",
-    },
-    {
-        label: "Age",
-        information: "23",
-    },
-    {
-        label: "City",
-        information: "Mogi Mirim, SP, Brazil",
-    },
-    {
-        label: "Address",
-        information: "Rua Alberto Misságlia, 86",
-    },
-
-    {
-        label: "Zip code",
-        information: "13807-683",
-    },
-    {
-        label: "Email",
-        information: "dainize22@gmail.com",
-    },
-    {
-        label: "Phone",
-        information: "+5519992530418",
-    },
-];
 
 const AboutPage = () => {
     return (
-        <Section className="">
+        <Section className="" id="about">
             <h2 className="text-start w-full font-bold text-5xl">About-me</h2>
             <p className="text-xl text-gray-400 my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -71,14 +34,11 @@ const AboutPage = () => {
             <h2 className="w-full text-start text-3xl font-bold my-6">
                 Technologies
             </h2>
-            <ul
-                className="flex gap-4 flex-nowrap mb-20 w-full overflow-x-scroll relative h-44 scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#EBEFFF]"
-                id="about"
-            >
+            <ul className="flex gap-4 flex-nowrap mb-20 w-full overflow-x-scroll relative h-44 scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#EBEFFF]">
                 {Technologies.map((elt, index) => (
                     <li
                         key={index}
-                        className="rounded-md cursor-pointer min-w-[6rem] w-24 h-24 shadow-xl flex justify-center items-center relative tech-card bg-[#ebefff] hover:first-line:text-primary"
+                        className="rounded-md cursor-pointer min-w-[6rem] w-24 h-24 shadow-xl flex justify-center items-center relative tech-card bg-[#ebefff] hover:bg-gray-800"
                     >
                         <i className="h-full w-full flex items-center text-gray-800 justify-center hover:text-primary">
                             <elt.icon className="text-5xl" />
