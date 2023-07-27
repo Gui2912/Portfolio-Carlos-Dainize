@@ -1,4 +1,5 @@
-import { AboutPage, Header, HomePage } from "@/components";
+import { AboutPage, Header, HomePage } from "./components";
+import ProjectsPage from "./components/pages/ProjectsPage";
 import React from "react";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
             <Header />
             <HomePage />
             <AboutPage />
+            <ProjectsPage />
         </main>
     );
 };

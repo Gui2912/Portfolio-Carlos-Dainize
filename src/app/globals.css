@@ -16,12 +16,21 @@
     }
 }
 
+button, a, .tech-card {
+    transition: all ease-in-out .3s;
+}
+
 a {
     cursor: pointer;
 }
 
 body {
     scroll-behavior: smooth;
+}
+
+.hamburguer {
+
+    animation: scaleUp 0.5 ease-in-out;
 }
 
 .tech-card:hover > p {
@@ -60,6 +69,7 @@ body {
 .arrow {
     animation: arrowIndicate 2s infinite ease-in-out;
 }
+
 
 @keyframes typing {
     0% {

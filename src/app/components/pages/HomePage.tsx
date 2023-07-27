@@ -1,5 +1,5 @@
 import React from "react";
-import { Section } from "@/components";
+import { Section } from "../../components";
 import Link from "next/link";
 import {
     BsLinkedin,
@@ -8,10 +8,11 @@ import {
     BsArrowDown,
     BsArrowDownCircleFill,
 } from "react-icons/bs";
+import { contacts } from "../../utils";
 
 const HomePage = () => {
     return (
-        <div className="relative flex w-full">
+        <div className="relative flex w-full" id='home'>
             <div className="w-2/4 bg-[#ebefff] h-screen absolute left-0 z-10"></div>
             <div className="w-full z-20 flex justify-center">
                 <Section className="justify-center">
@@ -29,24 +30,15 @@ const HomePage = () => {
                                 </h2>
                             </div>
                             <div className="flex gap-4 justify-center w-full md:w-max mt-6  md:mt-0">
-                                <Link href={"https://github.com/Gui2912"}>
-                                    <BsGithub className="text-black text-5xl hover:text-orange-500" />
-                                </Link>
-                                <Link
-                                    href={
-                                        "https://www.linkedin.com/in/carlos-dainize/"
-                                    }
-                                >
-                                    <BsLinkedin className="text-primary text-5xl hover:text-black" />
-                                </Link>
-                                <Link
-                                    href={
-                                        "https://api.whatsapp.com/send?phone=5519992530418&text=Ol%C3%A1%20Carlos,%20vim%20do%20seu%20portfolio"
-                                    }
-                                    id="about"
-                                >
-                                    <BsWhatsapp className="text-green-500 text-5xl hover:text-yellow-400" />
-                                </Link>
+                                {contacts.map((elt, index) => (
+                                    <>
+                                        <Link href={elt.link} target="_blank">
+                                            {
+                                                <elt.icon className="text-black text-5xl hover:first-of-type:text-primary" />
+                                            }
+                                        </Link>
+                                    </>
+                                ))}
                             </div>
                             <div className="flex mt-12 relative">
                                 <BsArrowDownCircleFill className="text-2xl absolute left-[40%] top-[30%] arrow text-primary" />
