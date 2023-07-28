@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button, Section } from "../../components";
+import { Section } from "../../components";
 import { Technologies, aboutInformations } from "../../utils";
 import React from "react";
 
@@ -7,7 +7,10 @@ const AboutPage = () => {
     return (
         <Section className="" id="about">
             <h2 className="text-start w-full font-bold text-5xl">Sobre</h2>
-            <p className="text-xl text-gray-400 my-5">
+            <p
+                className="text-xl text-gray-400 my-5"
+
+            >
                 Desenvolvedor Front-end apaixonado por tecnologia e programação
                 em formação pela{" "}
                 <Link
@@ -40,7 +43,15 @@ const AboutPage = () => {
                     <span className="text-primary font-bold text-xl">20+</span>{" "}
                     Projetos entregues
                 </p>
-                <Button className="btn-rounded">Baixar Currículo</Button>
+                <Link
+                    href={
+                        "https://docs.google.com/document/d/1UYY1n7UXNfnHtlp5PISmJ4td7LLKKuDH/edit?usp=sharing&ouid=116416844722262486178&rtpof=true&sd=true"
+                    }
+                    className="btn-rounded"
+                    target="_blank"
+                >
+                    Currículo
+                </Link>
             </article>
             <h2 className="w-full text-start text-3xl font-bold my-6">
                 Tecnologias que domino
