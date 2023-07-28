@@ -13,9 +13,6 @@ const navLinks: NavLinks[] = [
         name: "projects",
     },
     {
-        name: "resume",
-    },
-    {
         name: "contact",
     },
 ];

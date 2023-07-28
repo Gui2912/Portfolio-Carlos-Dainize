@@ -18,7 +18,7 @@ const HomePage = () => {
                 <Section className="justify-center">
                     <div className="flex items-center flex-col">
                         <p className="text-primary font-bold text-2xl">
-                            Hey! I am
+                            Olá! eu sou
                         </p>
                         <h1 className="text-[60px] font-bold text-center">
                             Carlos Dainize

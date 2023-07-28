@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button, Section } from "../../components";
 import { Technologies, aboutInformations } from "../../utils";
 import React from "react";
@@ -5,12 +6,22 @@ import React from "react";
 const AboutPage = () => {
     return (
         <Section className="" id="about">
-            <h2 className="text-start w-full font-bold text-5xl">About-me</h2>
+            <h2 className="text-start w-full font-bold text-5xl">Sobre</h2>
             <p className="text-xl text-gray-400 my-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis saepe laborum deleniti distinctio ea officia incidunt
-                nulla blanditiis, dolorum reprehenderit libero esse dolores
-                autem, porro nisi excepturi ut. Odio, minima!
+                Desenvolvedor Front-end apaixonado por tecnologia e programação
+                em formação pela{" "}
+                <Link
+                    href={"https://kenzie.com.br/"}
+                    className="text-primary underline"
+                >
+                    Kenzie Academy Brasil
+                </Link>
+                . Possuo habilidades em Html, Css, JavaScript, TypeScript,
+                Next.js, TailwindCss entre outras, bem como inglês a nível de
+                leitura e escrita. Utilizo metodologias ágeis e sou capaz de
+                aprender rapidamente novas tecnologias. Busco oportunidades para
+                aprimorar minhas habilidades em front-end e contribuir com
+                soluções criativas e inovadoras.
             </p>
             <article className=" w-full">
                 <ul className="flex flex-col gap-4 items-start">
@@ -26,13 +37,13 @@ const AboutPage = () => {
                     ))}
                 </ul>
                 <p className="text-xl mt-12 mb-6">
-                    <span className="text-primary font-bold text-xl">120</span>{" "}
-                    Projects completed
+                    <span className="text-primary font-bold text-xl">20+</span>{" "}
+                    Projetos entregues
                 </p>
-                <Button className="btn-rounded">Dowload Resume</Button>
+                <Button className="btn-rounded">Baixar Currículo</Button>
             </article>
             <h2 className="w-full text-start text-3xl font-bold my-6">
-                Technologies
+                Tecnologias que domino
             </h2>
             <ul className="flex gap-4 flex-nowrap mb-20 w-full overflow-x-scroll relative h-44 scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#EBEFFF]">
                 {Technologies.map((elt, index) => (
