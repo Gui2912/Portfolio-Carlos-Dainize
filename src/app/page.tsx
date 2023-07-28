@@ -1,4 +1,5 @@
 import { AboutPage, Header, HomePage } from "./components";
+import ContactPage from './components/pages/ContactPage';
 import ProjectsPage from "./components/pages/ProjectsPage";
 import React from "react";
 
@@ -9,6 +10,7 @@ const Home = () => {
             <HomePage />
             <AboutPage />
             <ProjectsPage />
+            <ContactPage />
         </main>
     );
 };

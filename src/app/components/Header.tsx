@@ -24,11 +24,7 @@ const Header = () => {
                             <Button className="">
                                 <Link
                                     onClick={() => setActive(elt.name)}
-                                    className={` ${
-                                        active === elt.name
-                                            ? "text-white font-bold bg-primary  hover:none"
-                                            : "text-gray-700"
-                                    } hover:text-white hover:bg-primary capitalize h-full p-4 rounded-md`}
+                                    className={`hover:text-white hover:bg-primary capitalize h-full p-4 rounded-md`}
                                     to={elt.name}
                                     smooth={true}
                                     spy={true}

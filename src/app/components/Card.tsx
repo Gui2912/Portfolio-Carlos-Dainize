@@ -25,7 +25,7 @@ const Card = () => {
                                 </span>
                             ))}
                         </div>
-                        <p className="text-gray-400 h-max max-h-[96px] md:overflow-hidden overflow-y-scroll">
+                        <p className="text-gray-400 h-max mb-4 max-h-[96px] md:overflow-hidden overflow-y-scroll">
                             {elt.description}
                         </p>
                         <div className='flex items-center gap-5'>

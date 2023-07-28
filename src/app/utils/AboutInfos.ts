@@ -5,24 +5,24 @@ interface AboutInfos {
 
 const aboutInformations: AboutInfos[] = [
     {
-        label: "Name",
+        label: "Nome",
         information: "Carlos Guilherme de Souza Dainize",
     },
     {
-        label: "Age",
+        label: "Idade",
         information: "23",
     },
     {
-        label: "City",
+        label: "Cidade",
         information: "Mogi Mirim, SP, Brazil",
     },
     {
-        label: "Address",
+        label: "Endereço",
         information: "Rua Alberto Misságlia, 86",
     },
 
     {
-        label: "Zip code",
+        label: "CEP",
         information: "13807-683",
     },
     {
@@ -30,7 +30,7 @@ const aboutInformations: AboutInfos[] = [
         information: "dainize22@gmail.com",
     },
     {
-        label: "Phone",
+        label: "Telefone",
         information: "+5519992530418",
     },
 ];
