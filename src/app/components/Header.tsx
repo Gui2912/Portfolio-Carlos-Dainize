@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Button } from ".";
+import { personalImage } from '../assets';
 
 const Header = () => {
     const [active, setActive] = useState("");
@@ -17,7 +18,7 @@ const Header = () => {
     return (
         <header className="h-[55px] bg-white shadow-md w-full px-3 flex items-center justify-center fixed top-0 z-50">
             <nav className="max-w-5xl flex items-center justify-between w-full relative">
-                <Image src="" alt="Portfolio Logo" />
+                <Image src={personalImage} alt="Portfolio Logo" className='w-10 h-10 rounded-full'/>
                 <ul className="md:flex hidden gap-6 justify-end">
                     {navLinks.map((elt, index) => (
                         <li key={index} className="capitalize cursor:pointer">
