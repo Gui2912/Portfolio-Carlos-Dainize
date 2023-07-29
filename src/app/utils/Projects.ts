@@ -59,6 +59,7 @@ const myProjects: Projects[] = [
         deploy: "https://projeto-findmyduo.vercel.app/",
         repository: "https://github.com/FindMyDuo/projeto-findmyduo",
         techList: ["Styled-Components", "React", "TypeScript"],
+        
     },
 ];
 
