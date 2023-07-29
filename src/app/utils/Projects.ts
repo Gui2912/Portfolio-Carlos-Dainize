@@ -14,7 +14,7 @@ const myProjects: Projects[] = [
         title: "Portfólio",
         description:
             "Meu portfólio pessoal onde centralizo meus principais projetos, formação e contatos",
-        deploy: "",
+        deploy: "https://github.com/Gui2912/Portfolio-Carlos-Dainize/tree/master",
         repository: "https://github.com/Gui2912/portfolio",
         techList: ["Next", "TypeScript", "TailwindCSS"],
     },
@@ -23,7 +23,7 @@ const myProjects: Projects[] = [
         title: "KenzieBurguer",
         description:
             "Uma hamburgueria virtual onde o cliente pode selecionar seus produtos através de um filtro e adicionar/remover do carrinho de comporas.",
-        deploy: "",
+        deploy: "https://hamburgueria-da-kenzie-sigma.vercel.app/",
         repository: "https://github.com/Gui2912/KenzieBurguer",
         techList: ["Styled-components", "React"],
     },
@@ -31,7 +31,7 @@ const myProjects: Projects[] = [
         title: "KenzieHub",
         description:
             "Uma plataforma virtual onde desenvolvedores podem postar seus projetos e alterá-los.",
-        deploy: "",
+        deploy: "https://kenzie-hub-gamma-silk.vercel.app/",
         repository: "https://github.com/Gui2912/Kenzie-Hub-Gui2912",
         techList: ["Styled-components", "React"],
     },
@@ -39,7 +39,7 @@ const myProjects: Projects[] = [
         title: "NuKenzie",
         description:
             "Esse projeto visa um controle financeiro do usuário de maneira simples e minimalista.",
-        deploy: "",
+        deploy: "https://nu-kenzie-taupe-nine.vercel.app/",
         repository: "https://github.com/Gui2912/react-entrega-s1-nu-kenzie-Gui2912",
         techList: ["Styled-components", "React"],
     },
@@ -59,7 +59,7 @@ const myProjects: Projects[] = [
         deploy: "https://projeto-findmyduo.vercel.app/",
         repository: "https://github.com/FindMyDuo/projeto-findmyduo",
         techList: ["Styled-Components", "React", "TypeScript"],
-        
+
     },
 ];
 
