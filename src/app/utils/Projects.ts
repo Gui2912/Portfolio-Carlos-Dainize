@@ -14,7 +14,7 @@ const myProjects: Projects[] = [
         title: "Portfólio",
         description:
             "Meu portfólio pessoal onde centralizo meus principais projetos, formação e contatos",
-        deploy: "https://github.com/Gui2912/Portfolio-Carlos-Dainize/tree/master",
+        deploy: "https://portfolio-lyart-xi-24.vercel.app/",
         repository: "https://github.com/Gui2912/portfolio",
         techList: ["Next", "TypeScript", "TailwindCSS"],
     },
