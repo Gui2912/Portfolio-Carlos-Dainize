@@ -7,11 +7,11 @@ interface Contacts {
 
 const contacts: Contacts[] = [
     {
-        link: "https://github.com/Gui2912",
+        link: "https://www.linkedin.com/in/carlos-dainize/",
         icon: BsLinkedin,
     },
     {
-        link: "https://www.linkedin.com/in/carlos-dainize/",
+        link: "https://github.com/Gui2912",
         icon: BsGithub,
     },
     {
