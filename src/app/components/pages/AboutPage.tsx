@@ -43,15 +43,7 @@ const AboutPage = () => {
                     <span className="text-primary font-bold text-xl">20+</span>{" "}
                     Projetos entregues
                 </p>
-                <Link
-                    href={
-                        "https://docs.google.com/document/d/1UYY1n7UXNfnHtlp5PISmJ4td7LLKKuDH/edit?usp=sharing&ouid=116416844722262486178&rtpof=true&sd=true"
-                    }
-                    className="btn-rounded"
-                    target="_blank"
-                >
-                    Currículo
-                </Link>
+                
             </article>
             <h2 className="w-full text-start text-3xl font-bold my-6">
                 Tecnologias que domino
