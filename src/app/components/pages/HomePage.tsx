@@ -26,7 +26,7 @@ const HomePage = () => {
                         <div className="items-center w-full flex flex-col justify-center">
                             <div className="w-full text-center flex justify-center">
                                 <h2 className="text-primary font-bold underline text-3xl type-write-effect border-gray-400 border-r-4 mb-8 font-mono">
-                                    Front end developer.
+                                    Full Stack developer.
                                 </h2>
                             </div>
                             <div className="flex gap-4 justify-center w-full md:w-max mt-6  md:mt-0">

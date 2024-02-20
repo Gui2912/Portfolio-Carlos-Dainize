@@ -10,14 +10,7 @@ interface Projects {
 }
 
 const myProjects: Projects[] = [
-    {
-        title: "Portfólio",
-        description:
-            "Meu portfólio pessoal onde centralizo meus principais projetos, formação e contatos",
-        deploy: "https://portfolio-lyart-xi-24.vercel.app/",
-        repository: "https://github.com/Gui2912/portfolio",
-        techList: ["Next", "TypeScript", "TailwindCSS"],
-    },
+
 
     {
         title: "KenzieBurguer",
@@ -25,14 +18,6 @@ const myProjects: Projects[] = [
             "Uma hamburgueria virtual onde o cliente pode selecionar seus produtos através de um filtro e adicionar/remover do carrinho de comporas.",
         deploy: "https://hamburgueria-da-kenzie-sigma.vercel.app/",
         repository: "https://github.com/Gui2912/KenzieBurguer",
-        techList: ["Styled-components", "React"],
-    },
-    {
-        title: "KenzieHub",
-        description:
-            "Uma plataforma virtual onde desenvolvedores podem postar seus projetos e alterá-los.",
-        deploy: "https://kenzie-hub-gamma-silk.vercel.app/",
-        repository: "https://github.com/Gui2912/Kenzie-Hub-Gui2912",
         techList: ["Styled-components", "React"],
     },
     {
